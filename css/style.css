@@ -1,0 +1,228 @@
+@import '/fonts/Montserrat/stylesheet.css';
+@import '/fonts/Philosopher/stylesheet.css';
+
+html {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+.container {
+    max-width: 1470px;
+    padding: 0 15px;
+    margin: 0 auto;
+    
+}
+
+.wrapper {
+    min-height: 100%;
+    background-color: #FD7400;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.main {
+    flex-grow: 1;
+}
+
+.header {
+    height: 100%;
+}
+
+.logo {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    gap: 46px;
+}
+
+.logo-img {
+    transition: transform 0.3s;
+}
+
+.logo-img:hover {
+    transform: scale(0.9);
+}
+
+.logo-info {
+   color: #fff;
+}
+
+.logo-title {
+    font-family: 'Philosopher';
+    font-size: 94px;
+    letter-spacing: .01em;
+}
+
+.logo-text {
+    font-family: 'Montserrat';
+    font-size: 38px;
+    letter-spacing: .36em;
+}
+
+.nav__contact {
+    padding-bottom: 150px;
+}
+
+.nav__contact-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 75px;
+}
+
+a[href^="mailto:"] {
+    font-size: 36px;
+    line-height: 32px;
+    font-family: 'Philosopher';
+    color: #fff;
+}
+
+a[href^="tel:"] {
+    font-size: 36px;
+    line-height: 32px;
+    font-family: 'Philosopher';
+    color: #fff;
+}
+
+.nav__contact-item:hover {
+    border-bottom: 2px solid #fff;
+}
+
+
+
+textarea {
+    width: 100%;
+    resize: none;
+}
+
+/* Стили для нашей кнопки */
+
+button {
+    border-radius: 5px;
+    padding: 15px 25px;
+    font-size: 28px;
+    line-height: 32px;
+    font-family: 'Philosopher';
+    text-decoration: none;
+    margin: 20px;
+    color: #FD7400;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    border: 0;
+
+    transition: transform 0.3s;
+}
+
+button:hover {
+    transform: scale(1.2);
+}
+
+button:active {
+    transform: translate(0px, 5px);
+    -webkit-transform: translate(0px, 5px);
+    box-shadow: 0px 1px 0px 0px;
+}
+
+button:focus {
+    outline: none !important
+}
+
+/* Стили для содержимого popup окна */
+
+input,
+textarea {
+    color: #FD7400;
+    border: 1px solid #fd760083;
+    border-radius: 5px;
+    background: #fff;
+    font-size: 14px;
+    margin: 0 0 10px;
+    padding: 5px;
+    width: 100%;
+    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+}
+
+input:focus {
+    border-color: #808080;
+    outline: none;
+}
+
+textarea:focus {
+    border-color: #808080;
+    outline: none;
+}
+
+/* Кнопка */
+
+.blue_btn {
+    background-color: #fff;
+    box-shadow: 5px 5px 5px 0px #f8a862;
+}
+
+/* Окно */
+
+.overlay_popup {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: #000;
+    opacity: 0.5;
+}
+
+.popup {
+    display: none;
+    position: relative;
+    z-index: 1000;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    max-width: 685px;
+}
+
+/* Ещё немного стилей для popup окна */
+
+.object {
+    max-width: 685px;
+    max-height: 650px;
+    background-color: #eee;
+    color: #FD7400;
+    padding: 50px 70px;
+}
+
+.object-title {
+    font-family: 'Montserrat';
+    font-size: 36px;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.object-text {
+    font-family: 'Philosopher';
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.object-btn {
+    font-size: 20px;
+    background: #FD7400;
+    color: #fff;
+
+    transition: transform 0.3s;
+}
+
+.object-btn:hover {
+    transform: scale(0.9);
+}
